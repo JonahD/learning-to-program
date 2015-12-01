@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * Created by jonah on 11/20/15.
  */
-public class rockPaperScissors {
+public class RockPaperScissors {
     private enum Choice {
         ROCK("rock"),
         PAPER("paper"),
