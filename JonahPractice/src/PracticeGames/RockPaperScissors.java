@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
+ * Rock, paper, scissors game.
  * Created by jonah on 11/20/15.
  */
 public class RockPaperScissors {
@@ -15,7 +16,7 @@ public class RockPaperScissors {
 
         private final String representation;
 
-        private Choice(String representation) {
+        Choice(String representation) {
             this.representation = representation;
         }
 
@@ -57,6 +58,8 @@ public class RockPaperScissors {
 
         int compy = new Random().nextInt(3) + 1;
         Choice computerChoice = Choice.getChoice(compy);
+
+        System.out.println("The computer chose " + computerChoice + ".");
 
         if(playerChoice.equals(computerChoice)) {
             System.out.println("Its a tie!");
